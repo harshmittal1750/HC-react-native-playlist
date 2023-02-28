@@ -34,20 +34,20 @@ const ActionCards = () => {
             ea ab placeat omnis, iste hic asperiores unde id nostrum facilis
             ullam?
           </Text>
-        </View>
-        <View style={styles.footerContainer}>
-          <TouchableOpacity
-            onPress={() =>
-              openWebsite('https://harshmittal1750.hashnode.dev/')
-            }>
-            <Text style={styles.socialLinks}>Read more</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() =>
-              openWebsite('https://harshmittal1750.hashnode.dev/')
-            }>
-            <Text style={styles.socialLinks}>follow me</Text>
-          </TouchableOpacity>
+          <View style={styles.footerContainer}>
+            <TouchableOpacity
+              onPress={() =>
+                openWebsite('https://harshmittal1750.hashnode.dev/')
+              }>
+              <Text style={styles.socialLinks}>Read more</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() =>
+                openWebsite('https://harshmittal1750.hashnode.dev/')
+              }>
+              <Text style={styles.socialLinks}>Follow me</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     </View>
@@ -62,14 +62,52 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingHorizontal: 8,
   },
-  card: {},
-  headerText: {},
-  headingContainer: {},
-  elevatedCard: {},
-  cardImage: {
-    height: 200,
+  card: {
+    width: 350,
+    height: 360,
+    borderRadius: 6,
+    marginVertical: 12,
+    marginHorizontal: 16,
   },
-  bodyContainer: {},
-  footerContainer: {},
-  socialLinks: {},
+  elevatedCard: {
+    backgroundColor: '#E07C24',
+    elevation: 3,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowColor: '#333',
+    shadowOpacity: 0.4,
+  },
+  headingContainer: {
+    height: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headerText: {
+    color: '#000',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  cardImage: {
+    height: 190,
+  },
+  bodyContainer: {
+    padding: 10,
+  },
+  footerContainer: {
+    padding: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  socialLinks: {
+    fontSize: 16,
+    color: '#000000',
+    backgroundColor: '#FFF',
+    paddingHorizontal: 20,
+    paddingVertical: 6,
+    borderRadius: 6,
+  },
 });
