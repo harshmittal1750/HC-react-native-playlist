@@ -1,4 +1,4 @@
-import {View, Text, SafeAreaView, ScrollView} from 'react-native';
+import {View, SafeAreaView, ScrollView} from 'react-native';
 import React from 'react';
 import FlatCards from './Components/FlatCards';
 import ElevatedCards from './Components/ElevatedCards';
@@ -11,7 +11,7 @@ const App = () => {
     <SafeAreaView>
       <ScrollView>
         <View>
-          <Text>App</Text>
+          {/* <Text>App</Text> */}
 
           <FlatCards />
           <ElevatedCards />
